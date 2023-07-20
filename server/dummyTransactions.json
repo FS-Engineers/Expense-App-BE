@@ -1,0 +1,812 @@
+[
+  {
+    "User ID": "SLEE001",
+    "Date": "1/1/2022",
+    "Account ID": "ACC001",
+    "Amount": -2704.54,
+    "Vendor": "Cleveland by Common",
+    "Category": "Home",
+    "Subcategory": "Rent/Mortgage",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/1/2022",
+    "Account ID": "ACC001",
+    "Amount": -155.06,
+    "Vendor": "Utility Management",
+    "Category": "Home",
+    "Subcategory": "Utilities",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/1/2022",
+    "Account ID": "ACC001",
+    "Amount": -56.66,
+    "Vendor": "Gym Membership",
+    "Category": "Health",
+    "Subcategory": "Gym Membership",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/2/2022",
+    "Account ID": "ACC001",
+    "Amount": -313.43,
+    "Vendor": "Car Payment",
+    "Category": "Transportation",
+    "Subcategory": "Car Payment",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/2/2022",
+    "Account ID": "ACC001",
+    "Amount": -31.62,
+    "Vendor": "Exxon Mobil",
+    "Category": "Transportation",
+    "Subcategory": "Gas",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/2/2022",
+    "Account ID": "ACC001",
+    "Amount": -6.75,
+    "Vendor": "Dunkin",
+    "Category": "Food",
+    "Subcategory": "Drinks",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/2/2022",
+    "Account ID": "ACC001",
+    "Amount": -223.75,
+    "Vendor": "Sallie Mae",
+    "Category": "Education",
+    "Subcategory": "Student Loan Payment",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/2/2022",
+    "Account ID": "ACC001",
+    "Amount": -9.99,
+    "Vendor": "Netflix",
+    "Category": "Entertainment",
+    "Subcategory": "Movies/TV",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/3/2022",
+    "Account ID": "ACC001",
+    "Amount": -52.31,
+    "Vendor": "IKEA",
+    "Category": "Home",
+    "Subcategory": "Furniture",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/3/2022",
+    "Account ID": "ACC001",
+    "Amount": -9.76,
+    "Vendor": "State St. Parking",
+    "Category": "Transportation",
+    "Subcategory": "Parking",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/3/2022",
+    "Account ID": "ACC001",
+    "Amount": -7.58,
+    "Vendor": "Starbucks",
+    "Category": "Food",
+    "Subcategory": "Drinks",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/4/2022",
+    "Account ID": "ACC001",
+    "Amount": -24.66,
+    "Vendor": "Amazon",
+    "Category": "Shopping",
+    "Subcategory": "Clothing",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/4/2022",
+    "Account ID": "ACC001",
+    "Amount": -32.98,
+    "Vendor": "Uber",
+    "Category": "Transportation",
+    "Subcategory": "Rideshare",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/4/2022",
+    "Account ID": "ACC001",
+    "Amount": -10.07,
+    "Vendor": "CVS Pharmacy",
+    "Category": "Health",
+    "Subcategory": "Pharmacy",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/5/2022",
+    "Account ID": "ACC001",
+    "Amount": -12.97,
+    "Vendor": "Petsmart",
+    "Category": "Home",
+    "Subcategory": "Pet",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/5/2022",
+    "Account ID": "ACC001",
+    "Amount": -9.99,
+    "Vendor": "Hulu",
+    "Category": "Entertainment",
+    "Subcategory": "Movies/TV",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/5/2022",
+    "Account ID": "ACC001",
+    "Amount": -17.33,
+    "Vendor": "Domino's Pizza",
+    "Category": "Food",
+    "Subcategory": "Delivery",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/6/2022",
+    "Account ID": "ACC001",
+    "Amount": -42.77,
+    "Vendor": "Shell Gas Station",
+    "Category": "Transportation",
+    "Subcategory": "Gas",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/6/2022",
+    "Account ID": "ACC001",
+    "Amount": -20.97,
+    "Vendor": "Bookstore",
+    "Category": "Education",
+    "Subcategory": "Books",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/6/2022",
+    "Account ID": "ACC001",
+    "Amount": -9.32,
+    "Vendor": "Starbucks",
+    "Category": "Food",
+    "Subcategory": "Drinks",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/6/2022",
+    "Account ID": "ACC001",
+    "Amount": -9.99,
+    "Vendor": "Spotify",
+    "Category": "Entertainment",
+    "Subcategory": "Music",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/7/2022",
+    "Account ID": "ACC001",
+    "Amount": 3153.54,
+    "Vendor": "Marketing Agency",
+    "Category": "Income",
+    "Subcategory": "Salary",
+    "WNS": "Savings"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/7/2022",
+    "Account ID": "ACC001",
+    "Amount": -13.45,
+    "Vendor": "Portillo's",
+    "Category": "Food",
+    "Subcategory": "Restaurants",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/7/2022",
+    "Account ID": "ACC001",
+    "Amount": -44.21,
+    "Vendor": "Target",
+    "Category": "Home",
+    "Subcategory": "Furniture",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/7/2022",
+    "Account ID": "ACC001",
+    "Amount": -30.95,
+    "Vendor": "Zara",
+    "Category": "Shopping",
+    "Subcategory": "Clothing",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/8/2022",
+    "Account ID": "ACC001",
+    "Amount": -42.45,
+    "Vendor": "Binny's",
+    "Category": "Food",
+    "Subcategory": "Drinks",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/8/2022",
+    "Account ID": "ACC001",
+    "Amount": -25.76,
+    "Vendor": "Uber",
+    "Category": "Transportation",
+    "Subcategory": "Rideshare",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/8/2022",
+    "Account ID": "ACC001",
+    "Amount": -24.91,
+    "Vendor": "AMC Theatres",
+    "Category": "Entertainment",
+    "Subcategory": "Movies/TV",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/8/2022",
+    "Account ID": "ACC001",
+    "Amount": -15.01,
+    "Vendor": "CVS Pharmacy",
+    "Category": "Health",
+    "Subcategory": "Pharmacy",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/8/2022",
+    "Account ID": "ACC001",
+    "Amount": -53.21,
+    "Vendor": "Uber Eats",
+    "Category": "Food",
+    "Subcategory": "Delivery",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/8/2022",
+    "Account ID": "ACC001",
+    "Amount": -120.76,
+    "Vendor": "Hoka",
+    "Category": "Shopping",
+    "Subcategory": "Clothing",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/9/2022",
+    "Account ID": "ACC001",
+    "Amount": -32.45,
+    "Vendor": "Small Cheval",
+    "Category": "Food",
+    "Subcategory": "Restaurants",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/9/2022",
+    "Account ID": "ACC001",
+    "Amount": -25.68,
+    "Vendor": "Jewel-Osco",
+    "Category": "Food",
+    "Subcategory": "Grocery",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/10/2022",
+    "Account ID": "ACC001",
+    "Amount": -9.76,
+    "Vendor": "State St. Parking",
+    "Category": "Transportation",
+    "Subcategory": "Parking",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/10/2022",
+    "Account ID": "ACC001",
+    "Amount": -15.14,
+    "Vendor": "Petsmart",
+    "Category": "Home",
+    "Subcategory": "Pet",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/11/2022",
+    "Account ID": "ACC001",
+    "Amount": 75.32,
+    "Vendor": "Venmo",
+    "Category": "Income",
+    "Subcategory": "Venmo",
+    "WNS": "Savings"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/11/2022",
+    "Account ID": "ACC001",
+    "Amount": -2.87,
+    "Vendor": "CTA",
+    "Category": "Transportation",
+    "Subcategory": "Public",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/11/2022",
+    "Account ID": "ACC001",
+    "Amount": -120.88,
+    "Vendor": "RPM Seafood",
+    "Category": "Food",
+    "Subcategory": "Restaurants",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/11/2022",
+    "Account ID": "ACC001",
+    "Amount": -463.05,
+    "Vendor": "Blue Cross Blue Shield",
+    "Category": "Health",
+    "Subcategory": "Insurance",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/11/2022",
+    "Account ID": "ACC001",
+    "Amount": -55.01,
+    "Vendor": "Verizon Wireless",
+    "Category": "Entertainment",
+    "Subcategory": "Technology",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/12/2022",
+    "Account ID": "ACC001",
+    "Amount": -67.99,
+    "Vendor": "Amazon",
+    "Category": "Home",
+    "Subcategory": "Furniture",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/12/2022",
+    "Account ID": "ACC001",
+    "Amount": -20.76,
+    "Vendor": "Whole Foods",
+    "Category": "Food",
+    "Subcategory": "Grocery",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/12/2022",
+    "Account ID": "ACC001",
+    "Amount": -15.74,
+    "Vendor": "TJ Maxx",
+    "Category": "Shopping",
+    "Subcategory": "Clothing",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/13/2022",
+    "Account ID": "ACC001",
+    "Amount": -41.03,
+    "Vendor": "Sephora",
+    "Category": "Shopping",
+    "Subcategory": "Beauty",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/14/2022",
+    "Account ID": "ACC001",
+    "Amount": -102.93,
+    "Vendor": "Maxine Salon",
+    "Category": "Shopping",
+    "Subcategory": "Beauty",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/14/2022",
+    "Account ID": "ACC001",
+    "Amount": -8.23,
+    "Vendor": "Coldstone Creamery",
+    "Category": "Food",
+    "Subcategory": "Restaurants",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/14/2022",
+    "Account ID": "ACC001",
+    "Amount": -6.75,
+    "Vendor": "Starbucks",
+    "Category": "Food",
+    "Subcategory": "Drinks",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/15/2022",
+    "Account ID": "ACC001",
+    "Amount": -12.36,
+    "Vendor": "Domino's Pizza",
+    "Category": "Food",
+    "Subcategory": "Delivery",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/15/2022",
+    "Account ID": "ACC001",
+    "Amount": -45.98,
+    "Vendor": "Target",
+    "Category": "Home",
+    "Subcategory": "Furniture",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/16/2022",
+    "Account ID": "ACC001",
+    "Amount": -52.09,
+    "Vendor": "Shell Gas Station",
+    "Category": "Transportation",
+    "Subcategory": "Gas",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/17/2022",
+    "Account ID": "ACC001",
+    "Amount": -43.66,
+    "Vendor": "Whole Foods",
+    "Category": "Food",
+    "Subcategory": "Grocery",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/17/2022",
+    "Account ID": "ACC001",
+    "Amount": -30.44,
+    "Vendor": "Amazon",
+    "Category": "Shopping",
+    "Subcategory": "Clothing",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/18/2022",
+    "Account ID": "ACC001",
+    "Amount": -22.09,
+    "Vendor": "Uber",
+    "Category": "Transportation",
+    "Subcategory": "Rideshare",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/18/2022",
+    "Account ID": "ACC001",
+    "Amount": -26.87,
+    "Vendor": "Field Museum",
+    "Category": "Entertainment",
+    "Subcategory": "Activities",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/18/2022",
+    "Account ID": "ACC001",
+    "Amount": -15.66,
+    "Vendor": "CVS Pharmacy",
+    "Category": "Health",
+    "Subcategory": "Pharmacy",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/19/2022",
+    "Account ID": "ACC001",
+    "Amount": -34.69,
+    "Vendor": "Solita Tacos",
+    "Category": "Food",
+    "Subcategory": "Restaurants",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/19/2022",
+    "Account ID": "ACC001",
+    "Amount": -20.44,
+    "Vendor": "Barnes and Noble",
+    "Category": "Education",
+    "Subcategory": "Books",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/20/2022",
+    "Account ID": "ACC001",
+    "Amount": -40.11,
+    "Vendor": "Northwestern Medicine",
+    "Category": "Health",
+    "Subcategory": "Copay",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/20/2022",
+    "Account ID": "ACC001",
+    "Amount": -18.96,
+    "Vendor": "Petsmart",
+    "Category": "Home",
+    "Subcategory": "Pet Supplies",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/21/2022",
+    "Account ID": "ACC001",
+    "Amount": 3153.54,
+    "Vendor": "Marketing Agency",
+    "Category": "Income",
+    "Subcategory": "Salary",
+    "WNS": "Savings"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/21/2022",
+    "Account ID": "ACC001",
+    "Amount": -71.34,
+    "Vendor": "Apple",
+    "Category": "Entertainment",
+    "Subcategory": "Technology",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/22/2022",
+    "Account ID": "ACC001",
+    "Amount": -2.87,
+    "Vendor": "CTA",
+    "Category": "Transportation",
+    "Subcategory": "Public",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/22/2022",
+    "Account ID": "ACC001",
+    "Amount": -15.97,
+    "Vendor": "Target",
+    "Category": "Shopping",
+    "Subcategory": "Accessories",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/22/2022",
+    "Account ID": "ACC001",
+    "Amount": -10.32,
+    "Vendor": "Jewel-Osco",
+    "Category": "Food",
+    "Subcategory": "Grocery",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/23/2022",
+    "Account ID": "ACC001",
+    "Amount": -25.55,
+    "Vendor": "Doordash",
+    "Category": "Food",
+    "Subcategory": "Delivery",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/23/2022",
+    "Account ID": "ACC001",
+    "Amount": -70.86,
+    "Vendor": "Target",
+    "Category": "Shopping",
+    "Subcategory": "Clothing",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/23/2022",
+    "Account ID": "ACC001",
+    "Amount": -28.08,
+    "Vendor": "Lula Café",
+    "Category": "Food",
+    "Subcategory": "Restaurants",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/24/2022",
+    "Account ID": "ACC001",
+    "Amount": -11.97,
+    "Vendor": "Whole Foods",
+    "Category": "Food",
+    "Subcategory": "Grocery",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/24/2022",
+    "Account ID": "ACC001",
+    "Amount": -9.76,
+    "Vendor": "State St. Parking",
+    "Category": "Transportation",
+    "Subcategory": "Parking",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/24/2022",
+    "Account ID": "ACC001",
+    "Amount": -15.65,
+    "Vendor": "Amazon",
+    "Category": "Shopping",
+    "Subcategory": "Clothing",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/25/2022",
+    "Account ID": "ACC001",
+    "Amount": -6.43,
+    "Vendor": "Starbucks",
+    "Category": "Food",
+    "Subcategory": "Drinks",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/26/2022",
+    "Account ID": "ACC001",
+    "Amount": -31.62,
+    "Vendor": "Exxon Mobil",
+    "Category": "Transportation",
+    "Subcategory": "Gas",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/26/2022",
+    "Account ID": "ACC001",
+    "Amount": -96.57,
+    "Vendor": "Lululemon",
+    "Category": "Shopping",
+    "Subcategory": "Clothing",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/27/2022",
+    "Account ID": "ACC001",
+    "Amount": -8.23,
+    "Vendor": "Crumbl Cookies",
+    "Category": "Food",
+    "Subcategory": "Restaurants",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/27/2022",
+    "Account ID": "ACC001",
+    "Amount": -24.87,
+    "Vendor": "Uber",
+    "Category": "Transportation",
+    "Subcategory": "Rideshare",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/28/2022",
+    "Account ID": "ACC001",
+    "Amount": -80.55,
+    "Vendor": "RPM Italian",
+    "Category": "Food",
+    "Subcategory": "Restaurants",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/29/2022",
+    "Account ID": "ACC001",
+    "Amount": -37.88,
+    "Vendor": "Whole Foods",
+    "Category": "Food",
+    "Subcategory": "Grocery",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/31/2022",
+    "Account ID": "ACC001",
+    "Amount": -25.76,
+    "Vendor": "Target",
+    "Category": "Shopping",
+    "Subcategory": "Accessories",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/31/2022",
+    "Account ID": "ACC001",
+    "Amount": -16.21,
+    "Vendor": "Bath and Body Works",
+    "Category": "Shopping",
+    "Subcategory": "Accessories",
+    "WNS": "Want"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/31/2022",
+    "Account ID": "ACC001",
+    "Amount": -10.82,
+    "Vendor": "CVS Pharmacy",
+    "Category": "Health",
+    "Subcategory": "Pharmacy",
+    "WNS": "Need"
+  },
+  {
+    "User ID": "SLEE001",
+    "Date": "1/31/2022",
+    "Account ID": "ACC001",
+    "Amount": -2.87,
+    "Vendor": "CTA",
+    "Category": "Transportation",
+    "Subcategory": "Public",
+    "WNS": "Need"
+  }
+]
