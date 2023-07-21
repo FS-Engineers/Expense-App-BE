@@ -1,5 +1,5 @@
 const Transaction = require("../models/transaction");
-const dateHandler = require("../controllers/date-handler");
+const dateHandler = require("./date-handler");
 
 const categories = [
   "Home",

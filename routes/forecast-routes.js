@@ -2,10 +2,10 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser')
 
-const forecastingControllers = require('../controllers/forecasting-controller')
+const forecastControllers = require('../controllers/forecast-controller')
 
 const router = express.Router();
 
-router.get('/forecasting/:userId/:year/:month', forecastingControllers.getUserForecast)
+router.get('/forecast/:userId/:year/:month', forecastControllers.getUserForecast)
 
 module.exports = router;
