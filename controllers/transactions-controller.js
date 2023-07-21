@@ -11,7 +11,7 @@ const getUserTransactions = async (req, res, next) => {
   const year = req.params.year;
   const month = req.params.month;
 
-  const [startDate, endDate] = dateHandler.processDates(year, month);
+  const [startDate, endDate] = dateHandler.processOneMonthDates(year, month);
 
   let transactions;
   try {
