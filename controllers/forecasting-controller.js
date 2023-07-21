@@ -12,6 +12,37 @@ const categories = [
   "Income",
 ];
 
+const getUserForecast = async (req, res, next) => {
+  // Get all user transactions
+  const userId = req.params.userId;
+  const year = req.params.year;
+  const month = req.params.month;
+
+  // get all transactions for given month
+  const transactions = await getOneMonthTransactions(userId, year, month);
+
+  // calculate totals for each category
+  const totals = calcOneMonthTotals(transactions);
+
+  // calculate threeMonthAvg
+  const threeMonthAvg = await calcThreeMonthAvg(userId, year, month);
+
+  // put everything together
+  let response = {};
+  categories.map((category) => {
+    response[category] = {
+      expense: totals[category],
+      budget: threeMonthAvg[category],
+    };
+  });
+  response["Expense"] = {
+    expense: totals.Expense,
+    budget: threeMonthAvg.Expense,
+  };
+
+  res.json(response);
+};
+
 const getOneMonthTransactions = async (userId, year, month) => {
   const [startDate, endDate] = dateHandler.processOneMonthDates(year, month);
 
@@ -83,7 +114,6 @@ const calcThreeMonthAvg = async (userId, year, month) => {
   );
 
   // calc average for each category based on 3 month data
-
   let avgs = {};
 
   categories.map((category) => {
@@ -110,37 +140,6 @@ const calcThreeMonthAvg = async (userId, year, month) => {
   avgs["Expense"] = totalExpenseAvg;
 
   return avgs;
-};
-
-const getUserForecast = async (req, res, next) => {
-  // Get all user transactions
-  const userId = req.params.userId;
-  const year = req.params.year;
-  const month = req.params.month;
-
-  // get all transactions for given month
-  const transactions = await getOneMonthTransactions(userId, year, month);
-
-  // calculate totals for each category
-  const totals = calcOneMonthTotals(transactions);
-
-  // calculate threeMonthAvg
-  const threeMonthAvg = await calcThreeMonthAvg(userId, year, month);
-
-  // put everything together
-  let response = {};
-  categories.map((category) => {
-    response[category] = {
-      expense: totals[category],
-      budget: threeMonthAvg[category],
-    };
-  });
-  response["Expense"] = {
-    expense: totals.Expense,
-    budget: threeMonthAvg.Expense,
-  };
-
-  res.json(response);
 };
 
 exports.getUserForecast = getUserForecast;
