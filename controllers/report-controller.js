@@ -80,7 +80,6 @@ const generateReportData = (yearOfTransactions, year, months) => {
   const response = {};
   categories.map((category) => {
     const catArray = [];
-    console.log(category);
     monthlyTotals.map((monthTotal) => {
       catArray.push(monthTotal[category]);
     });
