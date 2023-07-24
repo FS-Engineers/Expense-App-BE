@@ -36,7 +36,7 @@ const getUserForecast = async (req, res, next) => {
     };
   });
   response["Expense"] = {
-    expense: totals.Expense,
+    expense: totals.Expense.toFixed(2),
     budget: threeMonthAvg.Expense,
   };
 
