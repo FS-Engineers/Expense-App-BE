@@ -24,6 +24,19 @@ const quarters = {
     "Q4": ["10", "11", "12"]
 }
 
+const categories = [
+    "Home",
+    "Health",
+    "Transportation",
+    "Food",
+    "Education",
+    "Entertainment",
+    "Shopping",
+    "Income",
+    "Expense",
+    "Savings"
+  ];
+
 const getUserReport = async (req, res, next) => {
   const year = req.params.year;
   const month = req.params.month;
@@ -46,7 +59,7 @@ const getUserReport = async (req, res, next) => {
 
 const generateReportData = (yearOfTransactions, year, months) => {
 
-    let monthlyTotals = {};
+    let monthlyTotals = [];
 
     months.map((month) => {
       let [startDate, endDate] = dateHandler.processOneMonthDates(year, month);
@@ -64,10 +77,22 @@ const generateReportData = (yearOfTransactions, year, months) => {
   
       const savings = monthTotals.Income - monthTotals.Expense;
   
-      monthlyTotals[month] = { ...monthTotals, Savings: savings };
+      monthlyTotals.push({ ...monthTotals, Savings: savings, Month: month });
     });
+
+    const response = {}
+    categories.map((category) => {
+
+        const catArray = []
+        console.log(category)
+        monthlyTotals.map((monthTotal) => {
+            catArray.push(monthTotal[category])
+        })
+
+        response[category] = catArray;
+    })
   
-    return(monthlyTotals);
+    return(response);
 }
 
 exports.getUserReport = getUserReport;
