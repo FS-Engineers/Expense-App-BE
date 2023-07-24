@@ -6,10 +6,10 @@ const cors = require("cors");
 const transactionsRoutes = require("./routes/transactions-routes");
 const forecastRoutes = require("./routes/forecast-routes")
 const reportRoutes = require("./routes/report-routes")
-
+require('dotenv').config()
 
 server.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
@@ -22,10 +22,10 @@ server.use(forecastRoutes);
 server.use(reportRoutes)
 
 mongoose
-  .connect('mongodb://127.0.0.1:27017/Expense-App-Data')//I changed the connection string
+  .connect(process.env.DB_URI + '/Expense-App-Data')//I changed the connection string
   .then(() => {
-    server.listen(8080);
-    console.log("App listen at port 8080");
+    server.listen(process.env.PORT);
+    console.log("App listening at port "+ process.env.PORT);
 
   })
   .catch(err => {
