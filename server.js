@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const transactionsRoutes = require("./routes/transactions-routes");
 const forecastRoutes = require("./routes/forecast-routes")
-
+const reportRoutes = require("./routes/report-routes")
 
 
 server.use((req, res, next) => {
@@ -19,6 +19,7 @@ server.use((req, res, next) => {
 
 server.use(transactionsRoutes);
 server.use(forecastRoutes);
+server.use(reportRoutes)
 
 mongoose
   .connect('mongodb://127.0.0.1:27017/Expense-App-Data')//I changed the connection string

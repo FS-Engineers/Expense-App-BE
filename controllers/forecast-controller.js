@@ -1,6 +1,4 @@
-const Transaction = require("../models/transaction");
-const dateHandler = require("./date-handler");
-
+const transactionsAccessor = require("../accessors/transactions-accessor");
 const categories = [
   "Home",
   "Health",
@@ -19,7 +17,11 @@ const getUserForecast = async (req, res, next) => {
   const month = req.params.month;
 
   // get all transactions for given month
-  const transactions = await getOneMonthTransactions(userId, year, month);
+  const transactions = await transactionsAccessor.getOneMonthTransactions(
+    userId,
+    year,
+    month
+  );
 
   // calculate totals for each category
   const totals = calcOneMonthTotals(transactions);
@@ -36,45 +38,11 @@ const getUserForecast = async (req, res, next) => {
     };
   });
   response["Expense"] = {
-    expense: totals.Expense,
+    expense: totals.Expense.toFixed(2),
     budget: threeMonthAvg.Expense,
   };
 
   res.json(response);
-};
-
-const getOneMonthTransactions = async (userId, year, month) => {
-  const [startDate, endDate] = dateHandler.processOneMonthDates(year, month);
-
-  let transactions;
-  try {
-    transactions = await Transaction.find({
-      userId: userId,
-      date: { $gte: new Date(startDate), $lt: new Date(endDate) },
-    });
-  } catch (err) {
-    console.log(err);
-    return next();
-  }
-
-  return transactions;
-};
-
-const getThreeMonthtransactions = async (userId, year, month) => {
-  const [startDate, endDate] = dateHandler.processThreeMonthDates(year, month);
-
-  let transactions;
-  try {
-    transactions = await Transaction.find({
-      userId: userId,
-      date: { $gte: new Date(startDate), $lt: new Date(endDate) },
-    });
-  } catch (err) {
-    console.log(err);
-    return next();
-  }
-
-  return transactions;
 };
 
 const calcOneMonthTotals = (transactions) => {
@@ -107,11 +75,8 @@ const calcOneMonthTotals = (transactions) => {
 
 const calcThreeMonthAvg = async (userId, year, month) => {
   // get all user transactions for 3 months
-  const threeMonthTransactions = await getThreeMonthtransactions(
-    userId,
-    year,
-    month
-  );
+  const threeMonthTransactions =
+    await transactionsAccessor.getThreeMonthTransactions(userId, year, month);
 
   // calc average for each category based on 3 month data
   let avgs = {};
@@ -143,3 +108,4 @@ const calcThreeMonthAvg = async (userId, year, month) => {
 };
 
 exports.getUserForecast = getUserForecast;
+exports.calcOneMonthTotals = calcOneMonthTotals;

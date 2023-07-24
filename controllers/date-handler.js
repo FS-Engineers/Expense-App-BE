@@ -23,6 +23,15 @@ const processThreeMonthDates = (year, month) => {
   return [startString, endString];
 
 }
+const processOneYearDates = (year) => {
+
+  const startString = constructDateString(year, 1);
+  const endString = constructDateString(year + 1, 1);
+
+  return [startString, endString];
+
+}
+
 
 const constructDateString = (year, month) => {
   const dateString =
@@ -35,3 +44,4 @@ const constructDateString = (year, month) => {
 
 exports.processOneMonthDates = processOneMonthDates;
 exports.processThreeMonthDates = processThreeMonthDates;
+exports.processOneYearDates = processOneYearDates;
