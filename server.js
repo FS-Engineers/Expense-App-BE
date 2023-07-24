@@ -5,8 +5,8 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const transactionsRoutes = require("./routes/transactions-routes");
 const forecastRoutes = require("./routes/forecast-routes")
+const reportRoutes = require("./routes/report-routes")
 require('dotenv').config()
-
 
 server.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -19,6 +19,7 @@ server.use((req, res, next) => {
 
 server.use(transactionsRoutes);
 server.use(forecastRoutes);
+server.use(reportRoutes)
 
 mongoose
   .connect(process.env.DB_URI + '/Expense-App-Data')//I changed the connection string
