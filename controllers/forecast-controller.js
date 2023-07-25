@@ -37,10 +37,11 @@ const getUserForecast = async (req, res, next) => {
       budget: threeMonthAvg[category],
     };
   });
-  response["Expense"] = {
-    expense: Math.round(totals.Expense * 100) / 100,
-    budget: threeMonthAvg.Expense,
-  };
+  delete response.Income
+  // response["Expense"] = {
+  //   expense: Math.round(totals.Expense * 100) / 100,
+  //   budget: threeMonthAvg.Expense,
+  // };
 
   res.json(response);
 };
