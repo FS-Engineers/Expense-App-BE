@@ -38,7 +38,7 @@ const getUserForecast = async (req, res, next) => {
     };
   });
   response["Expense"] = {
-    expense: totals.Expense.toFixed(2),
+    expense: Math.round(totals.Expense * 100) / 100,
     budget: threeMonthAvg.Expense,
   };
 
