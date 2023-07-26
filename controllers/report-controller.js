@@ -49,11 +49,8 @@ const getUserReport = async (req, res, next) => {
   );
 
   if (year && !quarter && !month) {
-    console.log("AAA")
     res.json(generateReportData(yearOfTransactions, year, months));
   } else if (year && quarter && !month) {
-    console.log(quarters[quarter])
-    console.log(quarter)
     res.json(generateReportData(yearOfTransactions, year, quarters[quarter]));
   }
 };
