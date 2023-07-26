@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  # Node.js application service
+  app:
+    container_name: expense-app-be
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8080" # Adjust the port if your Node.js app listens on a different port
+    depends_on:
+      - mongo
+
+  # MongoDB service
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    ports:
+      - "27017" # Adjust the port if you want to use a different port for MongoDB
+    volumes:
+      - ./data:/data/db # Mounting a local volume for MongoDB data persistence
