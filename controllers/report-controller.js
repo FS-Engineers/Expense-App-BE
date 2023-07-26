@@ -18,10 +18,10 @@ const months = [
 ];
 
 const quarters = {
-  Q1: ["01", "02", "03"],
-  Q2: ["04", "05", "06"],
-  Q3: ["07", "08", "09"],
-  Q4: ["10", "11", "12"],
+  1: ["01", "02", "03"],
+  2: ["04", "05", "06"],
+  3: ["07", "08", "09"],
+  4: ["10", "11", "12"],
 };
 
 const categories = [
@@ -49,8 +49,11 @@ const getUserReport = async (req, res, next) => {
   );
 
   if (year && !quarter && !month) {
+    console.log("AAA")
     res.json(generateReportData(yearOfTransactions, year, months));
   } else if (year && quarter && !month) {
+    console.log(quarters[quarter])
+    console.log(quarter)
     res.json(generateReportData(yearOfTransactions, year, quarters[quarter]));
   }
 };
