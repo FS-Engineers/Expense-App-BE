@@ -108,21 +108,30 @@ const generateReportData = (yearOfTransactions, year, months, labels) => {
     monthlyTotals.push({ ...monthTotals, Savings: savings, Month: month });
   });
 
-  const response = {};
+  const datasets = [];
   categories.map((category) => {
     const catArray = [];
+    const catObj = {}
+
     monthlyTotals.map((monthTotal) => {
       catArray.push(monthTotal[category]);
-    });
 
-    response[category] = catArray;
+    });
+    catObj['data'] = catArray
+    catObj['label'] = category
+
+    // responses[category] = catArray;
+    datasets.push(catObj);
+
   });
 
-  console.log(response);
+  console.log(datasets);
   // console.log(months)
   console.log(labels);
 
-  return { labels, datasets: { ...response } };
+
+  return {labels, datasets}
+  // return { labels, datasets:  [...responses ] };
 };
 
 exports.getUserReport = getUserReport;
