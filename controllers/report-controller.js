@@ -125,11 +125,6 @@ const generateReportData = (yearOfTransactions, year, months, labels) => {
 
   });
 
-  console.log(datasets);
-  // console.log(months)
-  console.log(labels);
-
-
   return {labels, datasets}
   // return { labels, datasets:  [...responses ] };
 };
