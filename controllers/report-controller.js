@@ -17,6 +17,21 @@ const months = [
   "12",
 ];
 
+const monthsStrings = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 const quarters = {
   1: ["01", "02", "03"],
   2: ["04", "05", "06"],
@@ -24,14 +39,21 @@ const quarters = {
   4: ["10", "11", "12"],
 };
 
+const quartersStrings = {
+  1: ["January", "February", "March"],
+  2: ["April", "May", "June"],
+  3: ["July", "August", "September"],
+  4: ["October", "November", "December"],
+};
+
 const categories = [
-  "Home",
-  "Health",
-  "Transportation",
-  "Food",
-  "Education",
-  "Entertainment",
-  "Shopping",
+  // "Home",
+  // "Health",
+  // "Transportation",
+  // "Food",
+  // "Education",
+  // "Entertainment",
+  // "Shopping",
   "Income",
   "Expense",
   "Savings",
@@ -49,13 +71,22 @@ const getUserReport = async (req, res, next) => {
   );
 
   if (year && !quarter && !month) {
-    res.json(generateReportData(yearOfTransactions, year, months));
+    res.json(
+      generateReportData(yearOfTransactions, year, months, monthsStrings)
+    );
   } else if (year && quarter && !month) {
-    res.json(generateReportData(yearOfTransactions, year, quarters[quarter]));
+    res.json(
+      generateReportData(
+        yearOfTransactions,
+        year,
+        quarters[quarter],
+        quartersStrings[quarter]
+      )
+    );
   }
 };
 
-const generateReportData = (yearOfTransactions, year, months) => {
+const generateReportData = (yearOfTransactions, year, months, labels) => {
   let monthlyTotals = [];
 
   months.map((month) => {
@@ -87,7 +118,11 @@ const generateReportData = (yearOfTransactions, year, months) => {
     response[category] = catArray;
   });
 
-  return response;
+  console.log(response);
+  // console.log(months)
+  console.log(labels);
+
+  return { labels, datasets: { ...response } };
 };
 
 exports.getUserReport = getUserReport;
