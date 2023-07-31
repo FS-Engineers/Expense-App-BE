@@ -17,21 +17,43 @@ const months = [
   "12",
 ];
 
+const monthsStrings = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 const quarters = {
-  Q1: ["01", "02", "03"],
-  Q2: ["04", "05", "06"],
-  Q3: ["07", "08", "09"],
-  Q4: ["10", "11", "12"],
+  1: ["01", "02", "03"],
+  2: ["04", "05", "06"],
+  3: ["07", "08", "09"],
+  4: ["10", "11", "12"],
+};
+
+const quartersStrings = {
+  1: ["January", "February", "March"],
+  2: ["April", "May", "June"],
+  3: ["July", "August", "September"],
+  4: ["October", "November", "December"],
 };
 
 const categories = [
-  "Home",
-  "Health",
-  "Transportation",
-  "Food",
-  "Education",
-  "Entertainment",
-  "Shopping",
+  // "Home",
+  // "Health",
+  // "Transportation",
+  // "Food",
+  // "Education",
+  // "Entertainment",
+  // "Shopping",
   "Income",
   "Expense",
   "Savings",
@@ -49,13 +71,22 @@ const getUserReport = async (req, res, next) => {
   );
 
   if (year && !quarter && !month) {
-    res.json(generateReportData(yearOfTransactions, year, months));
+    res.json(
+      generateReportData(yearOfTransactions, year, months, monthsStrings)
+    );
   } else if (year && quarter && !month) {
-    res.json(generateReportData(yearOfTransactions, year, quarters[quarter]));
+    res.json(
+      generateReportData(
+        yearOfTransactions,
+        year,
+        quarters[quarter],
+        quartersStrings[quarter]
+      )
+    );
   }
 };
 
-const generateReportData = (yearOfTransactions, year, months) => {
+const generateReportData = (yearOfTransactions, year, months, labels) => {
   let monthlyTotals = [];
 
   months.map((month) => {
@@ -77,17 +108,30 @@ const generateReportData = (yearOfTransactions, year, months) => {
     monthlyTotals.push({ ...monthTotals, Savings: savings, Month: month });
   });
 
-  const response = {};
+  const datasets = [];
   categories.map((category) => {
     const catArray = [];
+    const catObj = {}
+
     monthlyTotals.map((monthTotal) => {
       catArray.push(monthTotal[category]);
-    });
 
-    response[category] = catArray;
+    });
+    catObj['data'] = catArray
+    catObj['label'] = category
+
+    // responses[category] = catArray;
+    datasets.push(catObj);
+
   });
 
-  return response;
+  console.log(datasets);
+  // console.log(months)
+  console.log(labels);
+
+
+  return {labels, datasets}
+  // return { labels, datasets:  [...responses ] };
 };
 
 exports.getUserReport = getUserReport;
