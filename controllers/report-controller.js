@@ -86,7 +86,7 @@ const getUserReport = async (req, res, next) => {
   }
 };
 
-const generateReportData = (yearOfTransactions, year, months, options) => {
+const generateReportData = (yearOfTransactions, year, months, monthList) => {
   let monthlyTotals = [];
 
   months.map((month) => {
@@ -125,7 +125,7 @@ const generateReportData = (yearOfTransactions, year, months, options) => {
 
   });
 
-  return {options, series}
+  return {monthList, series}
   // return { labels, datasets:  [...responses ] };
 };
 
