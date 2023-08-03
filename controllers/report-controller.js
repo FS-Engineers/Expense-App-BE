@@ -86,7 +86,7 @@ const getUserReport = async (req, res, next) => {
   }
 };
 
-const generateReportData = (yearOfTransactions, year, months, labels) => {
+const generateReportData = (yearOfTransactions, year, months, monthList) => {
   let monthlyTotals = [];
 
   months.map((month) => {
@@ -108,7 +108,7 @@ const generateReportData = (yearOfTransactions, year, months, labels) => {
     monthlyTotals.push({ ...monthTotals, Savings: savings, Month: month });
   });
 
-  const datasets = [];
+  const series = [];
   categories.map((category) => {
     const catArray = [];
     const catObj = {}
@@ -118,14 +118,14 @@ const generateReportData = (yearOfTransactions, year, months, labels) => {
 
     });
     catObj['data'] = catArray
-    catObj['label'] = category
+    catObj['name'] = category
 
     // responses[category] = catArray;
-    datasets.push(catObj);
+    series.push(catObj);
 
   });
 
-  return {labels, datasets}
+  return {monthList, series}
   // return { labels, datasets:  [...responses ] };
 };
 
